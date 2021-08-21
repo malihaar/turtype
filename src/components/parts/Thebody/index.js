@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 import Table from "../../elements/Table";
 
-function Thebody() {
+function TheBody() {
     return (
       <div className="thebodyContainer">
         <div>
@@ -12,4 +12,4 @@ function Thebody() {
     );
 }
 
-export default Thebody;
+export default TheBody;

@@ -1,23 +1,22 @@
 import React from "react";
 import "./App.scss";
 import Navbar from "./components/parts/Navbar";
-import Thebody from "./components/parts/Thebody";
+import TheBody from "./components/parts/Thebody";
 import Footer from "./components/parts/Footer";
-import Button from "./components/elements/Button";
+import Turtle from "./components/elements/Turtle";
 
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar/>
-      <Thebody>
-        
-        halo
-      </Thebody>
-      <Button content="Halo"/>
-      <Footer />
-    </div>
-  );
+    const style = {width: '150px', height: '75px', marginTop: '50px', marginLeft: '50px'}
+
+    return (
+        <div className="App">
+            <Navbar/>
+            <Turtle style={style}/>
+            <TheBody/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

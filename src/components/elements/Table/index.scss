@@ -1,10 +1,39 @@
+$tableColor: #D0C59F;
+
 .tableContainer {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
-    img {
-      display: block;
-      margin: 0 auto;
+  .tableColor {
+    background-color: $tableColor;
+  }
+
+  .wholeTable {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .board {
+      width: 100%;
+      height: 35%;
+      border-radius: 20px;
     }
+
+    .bottom {
+      height: 65%;
+      .foot {
+        width: 4%;
+        height: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      .leftFoot {
+        float: left;
+        margin-left: 5%;
+      }
+
+      .rightFoot {
+        float: right;
+        margin-right: 5%;
+      }
+    }
+  }
 }

@@ -1,0 +1,21 @@
+.clockContainer {
+  width: 100%;
+  border-radius: 50%;
+  border: 8px solid #FF9C06;;
+  height: 100%;
+
+  .timeContainer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .time {
+    text-align: center;
+    font-family: Fredoka One, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+  }
+}
