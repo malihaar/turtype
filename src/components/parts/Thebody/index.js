@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.scss";
-import Table from "../Table";
+import Table from "../../elements/Table";
 
 function Thebody() {
     return (
       <div className="thebodyContainer">
         <div>
-          <Table></Table>
+          <Table/>
         </div>
       </div>
     );

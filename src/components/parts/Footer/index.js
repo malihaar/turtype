@@ -11,12 +11,12 @@ function Footer() {
           <li>Contact</li>
           <li>About</li>
           <li>FAQ</li>
-          <li>support</li>
+          <li>
+            {" "}
+            <img src="/logo.svg" alt="" /> &copy; 2020 Cube, all rights reserved
+          </li>
         </ul>
       </nav>
-      <div >
-        <img src="/logo.svg" alt="" />  &copy; 2020 Cube, all rights reserved
-      </div>
     </div>
   );
 }

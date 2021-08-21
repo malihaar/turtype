@@ -1,20 +1,21 @@
 import React from "react";
 import "./App.scss";
-import Navbar from "./components/Navbar";
-import Thebody from "./components/Thebody";
-
-import Footer from "./components/Footer";
+import Navbar from "./components/parts/Navbar";
+import Thebody from "./components/parts/Thebody";
+import Footer from "./components/parts/Footer";
+import Button from "./components/elements/Button";
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Navbar/>
       <Thebody>
-
+        
+        halo
       </Thebody>
-      <Footer></Footer>
-      
+      <Button content="Halo"/>
+      <Footer />
     </div>
   );
 }
