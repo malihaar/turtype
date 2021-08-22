@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="navbarContainer">
           <img src="/logo.svg" alt="" />
-          <hr />
+          
     </div>
   );
 }

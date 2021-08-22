@@ -1,7 +1,8 @@
 .navbarContainer {
     background-color: white;
     margin-bottom: 0px;
-
+    height: 50px;
+     border-bottom: 4px solid #FF9C06;
 
     img {
         width: 80px;
@@ -10,11 +11,7 @@
         margin-bottom: 12px;
 
     }
-    hr {
-    border: 2px solid #FF9C06;
-    // width: 1440px;
-    margin: 0px;
-    }
+   
 
 }
 
