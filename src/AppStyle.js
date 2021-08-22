@@ -16,7 +16,7 @@ const appStyle = {
   styleButton: {
     position: "absolute",
     width: "10vw",
-    height: "5vh",
+    height: "4vh",
     top: "2vh",
     left: "7vw",
   },
@@ -37,7 +37,7 @@ const appStyle = {
   styleMonitor: {
     position: "absolute",
     width: "30vw",
-    height: "34vh",
+    height: "37vh",
     top: "36vh",
     right: "22vw",
   },
