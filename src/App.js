@@ -3,7 +3,7 @@ import "./App.scss";
 import Navbar from "./components/parts/Navbar";
 import TheBody from "./components/parts/Thebody";
 import Footer from "./components/parts/Footer";
-import Turtle from "./components/elements/Turtle";
+import Bowl from "./components/elements/Bowl";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     return (
         <div className="App">
             <Navbar/>
-            <Turtle style={style}/>
+            <Bowl style={style} wpm="100"/>
             <TheBody/>
             <Footer/>
         </div>

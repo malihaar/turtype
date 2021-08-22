@@ -1,147 +1,129 @@
-$upperShellColor: #52822D;
+$upperShellColor: #6DAA3E;
 $lowerShellColor: #456D26;
 $skinColor: wheat;
-
 @keyframes walk {
-  0% {
-    transform-origin: top center;
-    transform: rotate(-45deg);
-  }
-  25% {
-    transform-origin: top center;
-    transform: rotate(45deg);
-  }
-  50% {
-    transform-origin: top center;
-    transform: rotate(45deg);
-  }
-  75% {
-    transform-origin: top center;
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform-origin: top center;
-    transform: rotate(-45deg);
-  }
+    0% {
+        transform-origin: top center;
+        transform: rotate(-45deg);
+    }
+    25% {
+        transform-origin: top center;
+        transform: rotate(45deg);
+    }
+    50% {
+        transform-origin: top center;
+        transform: rotate(45deg);
+    }
+    75% {
+        transform-origin: top center;
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotate(-45deg);
+    }
 }
 
 .turtleContainer {
-  .wholeTurtle {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-
-    .skin {
-      background-color: $skinColor;
-    }
-
-    .leftPart {
-      width: 80%;
-      height: 100%;
-      z-index: 10;
-
-      .shell {
+    .wholeTurtle {
         width: 100%;
-        height: 75%;
-        z-index: 20;
-
-        .upperShell {
-          background-color: $upperShellColor;
-          height: 85%;
-          border-top-left-radius: 50% 100%;
-          border-top-right-radius: 50% 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        .skin {
+            background-color: $skinColor;
         }
-
-        .lowerShell {
-          height: 15%;
-          background-color: $lowerShellColor;
-        }
-      }
-
-      .bottom {
-        height: 25%;
-
-        .leg {
-          width: 10%;
-          height: 200%;
-          border-radius: 0 0 4px 7px;
-          z-index: 15;
-          margin-top: -5%;
-
-          &:nth-child(1) {
-            float: left;
-            margin-left: 5%;
-            animation: walk 3s infinite;
-            animation-delay: 1s;
-          }
-
-          &:nth-child(2) {
-            float: left;
-            margin-left: 5%;
-            animation: walk 3s infinite;
-          }
-
-          &:nth-child(3) {
-            float: right;
-            margin-right: 5%;
-            animation: walk 3s infinite;
-            animation-delay: 1s;
-          }
-
-          &:nth-child(4) {
-            float: right;
-            margin-right: 5%;
-            animation: walk 3s infinite;
-          }
-
-          &.long {
-            height: 150%;
-          }
-
-          &.short {
+        .leftPart {
+            width: 80%;
             height: 100%;
-          }
+            z-index: 10;
+            .shell {
+                width: 100%;
+                height: 75%;
+                z-index: 20;
+                .upperShell {
+                    background-color: $upperShellColor;
+                    height: 85%;
+                    border-top-left-radius: 50% 100%;
+                    border-top-right-radius: 50% 100%;
+                }
+                .lowerShell {
+                    height: 15%;
+                    background-color: $lowerShellColor;
+                }
+            }
+            .bottom {
+                height: 25%;
+                .leg {
+                    width: 10%;
+                    height: 200%;
+                    border-radius: 0 0 4px 7px;
+                    z-index: 15;
+                    margin-top: -5%;
+                    &:nth-child(1) {
+                        float: left;
+                        margin-left: 5%;
+                        animation: walk 3s infinite;
+                        animation-delay: 1s;
+                    }
+                    &:nth-child(2) {
+                        float: left;
+                        margin-left: 5%;
+                        animation: walk 3s infinite;
+                    }
+                    &:nth-child(3) {
+                        float: right;
+                        margin-right: 5%;
+                        animation: walk 3s infinite;
+                        animation-delay: 1s;
+                    }
+                    &:nth-child(4) {
+                        float: right;
+                        margin-right: 5%;
+                        animation: walk 3s infinite;
+                    }
+                    &.long {
+                        height: 150%;
+                    }
+                    &.short {
+                        height: 100%;
+                    }
+                }
+            }
         }
-      }
-    }
-
-    .head {
-      width: 20%;
-      height: 60%;
-      position: absolute;
-      right: 0;
-      bottom: 25%;
-
-      .neck {
-        width: 100%;
-        height: 50%;
-        position: absolute;
-        bottom: 0;
-        left: -25%;
-        z-index: 1;
-        border-bottom-right-radius: 75% 100%;
-      }
-
-      .face {
-        height: 40%;
-        width: 90%;
-        position: absolute;
-        bottom: 50%;
-        left: -15%;
-        border-top-right-radius: 5000px;
-        border-top-left-radius: 5000px;
-
-        .eye {
-          position: absolute;
-          height: 30%;
-          width: 10%;
-          right: 30%;
-          top: 50%;
-          border-radius: 50%;
-          background-color: black;
+        .head {
+            width: 20%;
+            height: 60%;
+            position: absolute;
+            right: 0;
+            bottom: 25%;
+            .neck {
+                width: 100%;
+                height: 50%;
+                position: absolute;
+                bottom: 0;
+                left: -25%;
+                z-index: 1;
+                border-bottom-right-radius: 75% 100%;
+            }
+            .face {
+                height: 40%;
+                width: 90%;
+                position: absolute;
+                bottom: 50%;
+                left: -15%;
+                border-top-right-radius: 5000px;
+                border-top-left-radius: 5000px;
+                .eye {
+                    position: absolute;
+                    height: 30%;
+                    width: 10%;
+                    right: 30%;
+                    top: 50%;
+                    border-radius: 50%;
+                    background-color: black;
+                }
+            }
         }
-      }
     }
-  }
 }
