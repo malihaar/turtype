@@ -1,5 +1,18 @@
 .App{
     
+    @media(max-width: 1000px) 
+    {
+         .body {
+             display: none;
+         }
+          
+    }
+     @media(min-width: 1001px) {
+         .smallScreen {
+             display: none;
+         }
+     }
+
     background-color: #F6FFF1;
      font-family: Open Sans;
      font-style: normal;
@@ -10,5 +23,14 @@
      min-height: 100vh;
      .body {
         position: relative;
+     }
+     .buy {
+        font-family: Fredoka One,
+        serif;
+        color:#FFBD5A;
+        font-weight: bold;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 80px;
      }
  } 

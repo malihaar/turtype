@@ -25,7 +25,10 @@ function App() {
         <Bowl style={appStyle.styleBowl} />
         <Turtle style={appStyle.styleTurtle} />
       </div>
-
+      <div className="smallScreen">
+        <div className="buy">BUY BIGGER SCREEN</div>
+        <Turtle style={appStyle.styleSmall} />
+      </div>
       <Footer />
     </div>
   );

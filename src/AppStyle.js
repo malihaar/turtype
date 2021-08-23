@@ -48,6 +48,13 @@ const appStyle = {
     top: "65vh",
     right: "13vw",
   },
+  
+  styleSmall: {
+    position: "absolute",
+    width: "80vw",
+    height: "50vh",
+    top: "30vh",
+    left: "11.5vw",
+  },
 };
-
 export default appStyle;
