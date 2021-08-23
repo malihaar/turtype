@@ -13,7 +13,8 @@ function Footer() {
           <li>FAQ</li> */}
           <li>
             {" "}
-            <img src="/logo.svg" alt="" /> &copy; 2020 Cube, all rights reserved
+            <img src="/logo.svg" alt="" /> &copy; 2021 Ratatouille, all rights
+            reserved
           </li>
         </ul>
       </nav>
