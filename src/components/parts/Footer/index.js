@@ -8,9 +8,6 @@ function Footer() {
 
       <nav className="footer-nav">
         <ul className="list-reset">
-          {/* <li>Contact</li>
-          <li>About</li>
-          <li>FAQ</li> */}
           <li>
             {" "}
             <img src="/logo.svg" alt="" /> &copy; 2021 Ratatouille, all rights
@@ -18,7 +15,7 @@ function Footer() {
           </li>
         </ul>
       </nav>
-    </div>
+    </div> 
   );
 }
 
