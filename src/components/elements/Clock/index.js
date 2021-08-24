@@ -5,7 +5,7 @@ const Clock = ({time, style}) => {
     return(
         <div className="clockContainer" style={style}>
             <div className="timeContainer">
-                <div className="time">{time}</div>
+                <div className="fredokaOne time">{time}</div>
             </div>
         </div>
     )

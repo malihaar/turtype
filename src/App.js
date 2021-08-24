@@ -12,9 +12,9 @@ import Button from "./components/elements/Button";
 import Turtle from "./components/elements/Turtle";
 
 function App() {
-  
+
   return (
-    <div className="App">
+    <div className="App openSans">
       <Navbar />
       <div className="body">
         <Poster style={appStyle.stylePoster} content="Remi great" />
@@ -26,7 +26,7 @@ function App() {
         <Turtle style={appStyle.styleTurtle} />
       </div>
       <div className="smallScreen">
-        <div className="buy">BUY BIGGER SCREEN</div>
+        <div className="buy fredokaOne">BUY BIGGER SCREEN</div>
         <Turtle style={appStyle.styleSmall} />
       </div>
       <Footer />

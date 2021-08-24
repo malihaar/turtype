@@ -6,7 +6,7 @@ const Poster = ({content, style}) => {
         <div className="posterContainer" style={style}>
             <div className="tape tape-top"/>
             <div className="contentContainer">
-                <div className="content">{content}</div>
+                <div className="openSans content">{content}</div>
             </div>
             <div className="tape tape-bottom"/>
         </div>

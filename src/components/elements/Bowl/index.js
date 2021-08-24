@@ -9,8 +9,8 @@ const Bowl = ({ wpm, style }) => {
           <div className="topCircle bowlColor" />
           <div className="rectangle bowlColor" >
             <div className="wpm">
-              <div className="counter">{ wpm }</div>
-              <div className="label">wpm</div>
+              <div className="fredokaOne counter">{ wpm }</div>
+              <div className="fredokaOne label">wpm</div>
             </div>
           </div>
           <div className="bottomCircle bowlColor" />

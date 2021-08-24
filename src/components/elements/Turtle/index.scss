@@ -1,6 +1,5 @@
-$upperShellColor: #6DAA3E;
-$lowerShellColor: #456D26;
-$skinColor: wheat;
+@import '../../../config/_vars';
+
 @keyframes walk {
   0% {
     transform-origin: top center;

@@ -11,7 +11,7 @@ function Button({content,style}) {
   };
 
   return (
-    <div className="button-container" style={style}>
+    <div className="button-container fredokaOne" style={style}>
       <h6>{content}</h6>
     </div>
   );

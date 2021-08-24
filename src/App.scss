@@ -1,36 +1,34 @@
-.App{
-    
-    @media(max-width: 1000px) 
-    {
-         .body {
-             display: none;
-         }
-          
-    }
-     @media(min-width: 1001px) {
-         .smallScreen {
-             display: none;
-         }
-     }
+@import './config/_vars';
+@import './config/_global';
 
-    background-color: #F6FFF1;
-     font-family: Open Sans;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 24px;
-     line-height: 33px;
-     color: #535A4E;
-     min-height: 100vh;
-     .body {
-        position: relative;
-     }
-     .buy {
-        font-family: Fredoka One,
-        serif;
-        color:#FFBD5A;
-        font-weight: bold;
-        font-size: 55px;
-        text-align: center;
-        margin-top: 80px;
-     }
- } 
+.App {
+  @media(max-width: $minWidthSize) {
+    .body {
+      display: none;
+    }
+
+  }
+  @media(min-width: calc(#{$minWidthSize} + 1px)) {
+    .smallScreen {
+      display: none;
+    }
+  }
+
+  background-color: $appBackgroundColor;
+  font-size: 24px;
+  line-height: 33px;
+  color: #535A4E;
+  min-height: 100vh;
+
+  .body {
+    position: relative;
+  }
+
+  .buy {
+    color: $appFontColor;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 80px;
+  }
+}
