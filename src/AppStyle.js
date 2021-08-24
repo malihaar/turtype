@@ -15,8 +15,8 @@ const appStyle = {
   },
   styleButton: {
     position: "absolute",
-    width: "10vw",
-    height: "4vh",
+    width: "9vw",
+    height: "3vh",
     top: "2vh",
     left: "7vw",
   },
@@ -48,7 +48,7 @@ const appStyle = {
     top: "65vh",
     right: "13vw",
   },
-  
+
   styleSmall: {
     position: "absolute",
     width: "80vw",

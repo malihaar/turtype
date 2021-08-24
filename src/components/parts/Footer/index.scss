@@ -5,26 +5,15 @@
   background-color: #A2B295;
   position: absolute;
   margin-top: 40px;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: 40px;
-
-  li {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-  }
-
+  display: flex;
+  justify-content: center;
 
   img {
     width: 70px;
     size: 20px;
     margin-right: 5px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  hr {
-    border: 2px solid #F6FFF1;
-    margin: 0;
   }
 }

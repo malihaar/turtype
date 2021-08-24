@@ -1,22 +1,25 @@
-.button-container {
-  min-height: 40px;
+.buttonContainer {
+  min-height: 30px;
   margin-top: 39px;
   border-radius: 3px;
   background-color: #7AB54B;
   color: white;
-  font-family: Fredoka One, serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   padding: 8px 13px 8px 13px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+
   &:hover {
     cursor: pointer;
     opacity: 0.8;
   }
+
   h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
     margin: 0;
     padding-top: 3px;
   }
