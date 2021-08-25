@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import './index.scss'
+import WordCompletionEvent from "../../../events/WordCompletionEvent";
 
 const Poster = ({content, style}) => {
     const [displayedContent, setDisplayedContent] = useState([...content])
 
     useEffect(() => {
-        document.addEventListener('update', () => {
+        document.addEventListener(WordCompletionEvent.NAME, () => {
             content.shift()
             setDisplayedContent([...content])
         })

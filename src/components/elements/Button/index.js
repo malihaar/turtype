@@ -1,5 +1,6 @@
 import "./index.scss";
 import { PropTypes } from "prop-types";
+import WordCompletionEvent from "../../../events/WordCompletionEvent";
 
 function Button({content,style}) {
   Button.propTypes = {
@@ -8,8 +9,7 @@ function Button({content,style}) {
   };
 
   const click = () => {
-      const event = new CustomEvent('update')
-      document.dispatchEvent(event)
+      document.dispatchEvent(new WordCompletionEvent())
   }
 
   return (
