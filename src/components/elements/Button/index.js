@@ -8,7 +8,7 @@ function Button({content,style}) {
   };
 
   const click = () => {
-      const event = new CustomEvent('penis', {size: '20cm'})
+      const event = new CustomEvent('update', {size: '20cm'})
       document.dispatchEvent(event)
   }
 

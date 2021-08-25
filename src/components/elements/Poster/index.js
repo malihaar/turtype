@@ -5,7 +5,7 @@ const Poster = ({content, style}) => {
     const [displayedContent, setDisplayedContent] = useState([...content])
 
     useEffect(() => {
-        document.addEventListener('penis', () => {
+        document.addEventListener('update', () => {
             content.shift()
             setDisplayedContent([...content])
         })
