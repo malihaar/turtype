@@ -25,10 +25,13 @@
     overflow: hidden;
 
     .content {
+      text-align: justify;
       font-size: 20px;
       padding: 30px 20px 30px 20px;
-      word-break: break-all;
-      overflow-wrap: break-word;
+
+      .firstWord {
+        color: red;
+      }
     }
   }
 }
