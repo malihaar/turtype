@@ -10,6 +10,7 @@ const Poster = ({content, style}) => {
             content.shift()
             setDisplayedContent([...content])
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const getFirstWordToDisplay = () => {
