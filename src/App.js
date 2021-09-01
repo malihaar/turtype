@@ -1,5 +1,5 @@
 import "./App.scss";
-import appStyle from "./AppStyle.js";
+import appStyle from "./config/AppStyle.js";
 import Navbar from "./components/parts/Navbar";
 import Footer from "./components/parts/Footer";
 import Bowl from "./components/elements/Bowl";

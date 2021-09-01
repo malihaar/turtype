@@ -52,7 +52,7 @@ const appStyle = {
   styleSmall: {
     position: "absolute",
     width: "80vw",
-    height: "50vh",
+    height: "35vh",
     top: "30vh",
     left: "11.5vw",
   },
