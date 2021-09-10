@@ -19,7 +19,7 @@ function App() {
             <Navbar/>
             <div className="body">
                 <Poster style={appStyle.stylePoster} content={content}/>
-                <Button style={appStyle.styleButton} content="New Race"/>
+                <Button style={appStyle.styleButton} width="9" height="3" content="New Race"/>
                 <Clock style={appStyle.styleClock} time="Start"/>
                 <Table style={appStyle.styleTable}/>
                 <Monitor style={appStyle.styleMonitor} content="Yeo  great"/>
