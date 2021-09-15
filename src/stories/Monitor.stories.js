@@ -22,20 +22,17 @@ export const Large = Template.bind({});
 Small.args = {
     content,
     width: 25,
-    height:30,   
-    
+    height:30,
 }
 
 Medium.args = {
     content,
     width: 30,
     height: 37,
-    
 };
 
 Large.args = {
     content,
     width: 45,
     height: 55,
-    
 };

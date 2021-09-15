@@ -2,8 +2,6 @@ import React from 'react';
 
 import Table from '../components/elements/Table';
 
-const content = 'My Table'
-
 export default {
     title: 'Table',
     component: Table,
@@ -20,22 +18,16 @@ export const Medium = Template.bind({});
 export const Large = Template.bind({});
 
 Small.args = {
-    content,
     width: 66,
-    height:16,   
-    
+    height:16,
 }
 
 Medium.args = {
-    content,
     width: 77,
     height: 20,
-    
 };
 
 Large.args = {
-    content,
     width: 89,
     height: 28,
-    
 };

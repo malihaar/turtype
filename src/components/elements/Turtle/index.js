@@ -13,7 +13,6 @@ style = {
   ...style,
   width: `${width}vw`,
   height: `${height}vh`,
- 
 };
 
     return (
