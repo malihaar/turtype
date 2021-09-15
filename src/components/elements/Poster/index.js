@@ -1,8 +1,24 @@
 import React, {useEffect, useState} from 'react';
-import './index.scss'
+import './index.scss';
+import { PropTypes } from "prop-types";
 import WordCompletionEvent from "../../../events/WordCompletionEvent";
 
-const Poster = ({content, style}) => {
+const Poster = ({width, height, content, style}) => {
+
+ Poster.propTypes = {
+    content: PropTypes.string.isRequired,
+    width: PropTypes.oneOf([...new Array(100)].map((_, i) => i + 1)),
+    height: PropTypes.oneOf([...new Array(100)].map((_, i) => i + 1)),
+    style: PropTypes.object,
+  };
+
+style = {
+  ...style,
+  width: `${width}vw`,
+  height: `${height}vh`,
+ 
+};
+
     const [displayedContent, setDisplayedContent] = useState([...content])
 
     useEffect(() => {

@@ -1,7 +1,25 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import "./index.scss";
 
-const Bowl = ({ wpm, style }) => {
+
+
+const Bowl = ({ width, height, wpm, style }) => {
+
+  Bowl.propTypes = {
+    wpm: PropTypes.number.isRequired,
+    width: PropTypes.oneOf([...new Array(100)].map((_, i) => i + 1)),
+    height: PropTypes.oneOf([...new Array(100)].map((_, i) => i + 1)),
+    style: PropTypes.object,
+  };
+
+style = {
+  ...style,
+  width: `${width}vw`,
+  height: `${height}vh`,
+ 
+};
+
   return (
     <div className="bowlContainer" style={style}>
       <div className="wholeBowl">

@@ -2,7 +2,7 @@ import "./index.scss";
 import {PropTypes} from "prop-types";
 import WordCompletionEvent from "../../../events/WordCompletionEvent";
 
-function Button({content, style, width, height, color}) {
+const Button = ({content, style, width, height, color}) => {
     Button.propTypes = {
         content: PropTypes.string.isRequired,
         width: PropTypes.oneOf([...(new Array(100))].map((_, i) => i + 1)),
