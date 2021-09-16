@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.scss';
 import {PropTypes} from "prop-types";
 
@@ -17,13 +17,23 @@ style = {
   height: `${height}vh`,
  
 };
+
+   const [value, setValue] = useState("")
+
+    const handleChange=(e)=> {
+        setValue(e.nativeEvent.data===" "?"":e.target.value)
+    }
+
+
     return (
         <div className="monitorContainer" style={style}>
             <div className="wholeMonitor">
                 <div className="topPart monitorColor">
                     <div className="screen">
                         <div className="contentContainer">
-                            <div className="content">{content}</div>
+                            <div className="content">
+                            <textarea className="openSans" value={value} onChange={handleChange}/>
+                            </div>
                         </div>
                     </div>
                 </div>

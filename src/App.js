@@ -20,35 +20,35 @@ function App() {
         <div className="body">
           <Poster
             style={appStyle.stylePoster}
-            width="25"
-            height="35"
+            width={25}
+            height={35}
             content={content}
           />
           <Button
             style={appStyle.styleButton}
-            width="9"
-            height="3"
+            width={9}
+            height={3}
             content="New Race"
           />
           <Clock
             style={appStyle.styleClock}
-            width="12"
-            height="12"
+            width={12}
+            height={12}
             time="Start"
           />
-          <Table style={appStyle.styleTable} width="77" height="20" />
+          <Table style={appStyle.styleTable} width={77} height={20}/>
           <Monitor
             style={appStyle.styleMonitor}
-            width="30"
-            height="37"
+            width={30}
+            height={37}
             content="Yeo great"
           />
-          <Bowl style={appStyle.styleBowl} width="8" height="8" wpm="100" />
-          <Turtle style={appStyle.styleTurtle} width="8" height="10" />
+          <Bowl style={appStyle.styleBowl} width={8} height={8} wpm="100" />
+          <Turtle style={appStyle.styleTurtle} width={8} height={10} />
         </div>
         <div className="smallScreen">
           <div className="buy fredokaOne">BUY BIGGER SCREEN</div>
-          <Turtle style={appStyle.styleSmall} width="80" height="35" />
+          <Turtle style={appStyle.styleSmall} width={80} height={35} />
         </div>
         <Footer />
       </div>
